@@ -28,13 +28,13 @@ function Tracks() {
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-12">
-      <h2 className="text-2xl font-bold text-white mb-6">Latest tracks</h2>
+      <h2 className="text-2xl font-bold gold-text animate-gold mb-6">Latest tracks</h2>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
         {tracks.map(t => (
           <div key={t.id} className="bg-zinc-900/60 border border-amber-500/20 rounded-xl overflow-hidden hover:border-amber-400/50 transition">
             {t.cover && <img src={t.cover} alt={t.title} className="h-40 w-full object-cover" />}
             <div className="p-4">
-              <h3 className="text-white font-semibold">{t.title}</h3>
+              <h3 className="text-white font-semibold hover-gold hover-animate-gold">{t.title}</h3>
               <p className="text-zinc-300 text-sm">{t.artist}</p>
               <div className="mt-3">
                 <a href={t.audio_url || t.external_url || '#'} target="_blank" className="inline-flex items-center gap-2 text-amber-300 hover:text-white">

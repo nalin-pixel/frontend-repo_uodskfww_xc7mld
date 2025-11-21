@@ -13,7 +13,7 @@ function Hero({ onExplore }) {
           <Music size={16} />
           Napoleon Complex • Music • Fashion • Coffee
         </div>
-        <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">
+        <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight gold-text animate-gold">
           Napoleon Complex
         </h1>
         <p className="mt-5 text-zinc-200/90 text-lg max-w-2xl mx-auto">
@@ -30,9 +30,9 @@ function Hero({ onExplore }) {
           </button>
         </div>
         <div className="mt-10 flex items-center justify-center gap-6 text-amber-200">
-          <div className="inline-flex items-center gap-2"><ShoppingBag size={18} /> Apparel</div>
-          <div className="inline-flex items-center gap-2"><Coffee size={18} /> Coffee</div>
-          <div className="inline-flex items-center gap-2"><Music size={18} /> Tracks</div>
+          <div className="inline-flex items-center gap-2 hover-gold hover-animate-gold"><ShoppingBag size={18} /> Apparel</div>
+          <div className="inline-flex items-center gap-2 hover-gold hover-animate-gold"><Coffee size={18} /> Coffee</div>
+          <div className="inline-flex items-center gap-2 hover-gold hover-animate-gold"><Music size={18} /> Tracks</div>
         </div>
       </div>
     </section>

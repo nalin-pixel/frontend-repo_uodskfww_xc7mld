@@ -29,10 +29,10 @@ function Shop() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-12">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold text-white">Shop</h2>
+        <h2 className="text-2xl font-bold gold-text animate-gold">Shop</h2>
         <div className="flex gap-2">
           {['all','clothing','coffee'].map(c => (
-            <button key={c} onClick={() => setFilter(c)} className={`px-3 py-1.5 rounded-lg text-sm border ${filter===c? 'bg-amber-500 text-black border-amber-400':'bg-zinc-900/60 text-zinc-200 border-amber-500/20'}`}>{c.charAt(0).toUpperCase()+c.slice(1)}</button>
+            <button key={c} onClick={() => setFilter(c)} className={`px-3 py-1.5 rounded-lg text-sm border ${filter===c? 'bg-amber-500 text-black border-amber-400':'bg-zinc-900/60 text-zinc-200 border-amber-500/20 hover-gold hover-animate-gold'}`}>{c.charAt(0).toUpperCase()+c.slice(1)}</button>
           ))}
         </div>
       </div>
@@ -45,7 +45,7 @@ function Shop() {
           <div key={p.id} className="bg-zinc-900/60 border border-amber-500/20 rounded-xl overflow-hidden">
             {p.image && <img src={p.image} alt={p.title} className="h-48 w-full object-cover" />}
             <div className="p-4">
-              <h3 className="text-white font-semibold">{p.title}</h3>
+              <h3 className="text-white font-semibold hover-gold hover-animate-gold">{p.title}</h3>
               <div className="mt-2 flex items-center justify-between">
                 <span className="text-amber-200">${p.price.toFixed(2)}</span>
                 <button className="inline-flex items-center gap-2 text-sm bg-amber-500 text-black px-3 py-1.5 rounded-lg">
