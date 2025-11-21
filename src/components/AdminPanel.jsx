@@ -21,12 +21,12 @@ function AdminPanel() {
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-8">
-      <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+      <div className="bg-zinc-900/60 border border-amber-500/20 rounded-xl p-6">
         <h3 className="text-white font-semibold mb-3">Quick demo data</h3>
         <div className="flex items-center gap-3">
-          <button disabled={busy} onClick={() => seed('products')} className="px-3 py-2 rounded-lg bg-white text-slate-900">Seed products</button>
-          <button disabled={busy} onClick={() => seed('tracks')} className="px-3 py-2 rounded-lg bg-blue-600 text-white">Seed tracks</button>
-          {msg && <span className="text-blue-200">{msg}</span>}
+          <button disabled={busy} onClick={() => seed('products')} className="px-3 py-2 rounded-lg bg-white text-black">Seed products</button>
+          <button disabled={busy} onClick={() => seed('tracks')} className="px-3 py-2 rounded-lg bg-amber-500 text-black">Seed tracks</button>
+          {msg && <span className="text-amber-200">{msg}</span>}
         </div>
       </div>
     </section>

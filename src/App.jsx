@@ -17,7 +17,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-blue-100">
+    <div className="min-h-screen bg-black text-zinc-100">
       <Hero onExplore={handleExplore} />
 
       <div ref={musicRef}>
@@ -30,8 +30,8 @@ function App() {
 
       <AdminPanel />
 
-      <footer className="border-t border-white/10 py-10 mt-10">
-        <div className="max-w-6xl mx-auto px-6 text-sm text-blue-300/70">
+      <footer className="border-t border-amber-500/20 py-10 mt-10">
+        <div className="max-w-6xl mx-auto px-6 text-sm text-amber-200/80">
           © {new Date().getFullYear()} Napoleon Complex — All rights reserved
         </div>
       </footer>
