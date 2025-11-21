@@ -11,13 +11,13 @@ function Hero({ onExplore }) {
       <div className="relative max-w-6xl mx-auto text-center py-24 px-6">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-blue-200 text-sm mb-6">
           <Music size={16} />
-          Original music • Fashion • Coffee
+          Napoleon Complex • Music • Fashion • Coffee
         </div>
         <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-white">
-          One home for my sound and style
+          Napoleon Complex
         </h1>
         <p className="mt-5 text-blue-100/90 text-lg max-w-2xl mx-auto">
-          Stream my latest tracks, shop the clothing line, and get a taste of the upcoming coffee roasts.
+          One home for the sound and style. Stream new tracks, shop the apparel, and get ready for the coffee drop.
         </p>
         <div className="mt-10 flex items-center justify-center gap-4">
           <button onClick={() => onExplore('music')} className="inline-flex items-center gap-2 bg-white text-slate-900 font-semibold px-5 py-3 rounded-lg hover:shadow-lg transition">

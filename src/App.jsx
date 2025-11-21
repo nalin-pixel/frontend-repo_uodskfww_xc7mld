@@ -32,7 +32,7 @@ function App() {
 
       <footer className="border-t border-white/10 py-10 mt-10">
         <div className="max-w-6xl mx-auto px-6 text-sm text-blue-300/70">
-          © {new Date().getFullYear()} Your Name — All rights reserved
+          © {new Date().getFullYear()} Napoleon Complex — All rights reserved
         </div>
       </footer>
     </div>
