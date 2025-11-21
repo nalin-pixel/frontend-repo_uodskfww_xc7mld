@@ -27,8 +27,8 @@ function App() {
             <span className="font-semibold tracking-tight gold-text animate-gold">Napoleon Complex</span>
           </div>
           <nav className="hidden sm:flex items-center gap-6 text-sm">
-            <button onClick={() => handleExplore('music')} className="text-amber-200 hover:text-white transition">Music</button>
-            <button onClick={() => handleExplore('shop')} className="text-amber-200 hover:text-white transition">Shop</button>
+            <button onClick={() => handleExplore('music')} className="text-amber-200 transition hover-gold hover-animate-gold">Music</button>
+            <button onClick={() => handleExplore('shop')} className="text-amber-200 transition hover-gold hover-animate-gold">Shop</button>
           </nav>
         </div>
       </header>
@@ -46,8 +46,14 @@ function App() {
       <AdminPanel />
 
       <footer className="border-t border-amber-500/20 py-10 mt-10">
-        <div className="max-w-6xl mx-auto px-6 text-sm text-amber-200/80">
-          © {new Date().getFullYear()} Napoleon Complex — All rights reserved
+        <div className="max-w-6xl mx-auto px-6 text-sm text-amber-200/80 space-y-3">
+          <div className="flex items-center gap-2">
+            <img src={logoUrl} alt="Napoleon Complex logo" className="h-5 w-5 object-contain rounded" />
+            <span className="gold-text animate-gold">Napoleon Complex</span>
+          </div>
+          <div>
+            © {new Date().getFullYear()} Napoleon Complex — All rights reserved
+          </div>
         </div>
       </footer>
     </div>
