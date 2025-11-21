@@ -24,9 +24,7 @@ function App() {
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src={logoUrl} alt="Napoleon Complex logo" className="h-9 w-9 object-contain rounded" />
-            <span className="font-semibold tracking-tight bg-gradient-to-r from-amber-200 via-amber-400 to-amber-200 bg-clip-text text-transparent">
-              Napoleon Complex
-            </span>
+            <span className="font-semibold tracking-tight gold-text animate-gold">Napoleon Complex</span>
           </div>
           <nav className="hidden sm:flex items-center gap-6 text-sm">
             <button onClick={() => handleExplore('music')} className="text-amber-200 hover:text-white transition">Music</button>
